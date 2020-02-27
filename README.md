@@ -1,7 +1,7 @@
 # MoviesApp
 Displays current trending movies.  
 
-The App uses jQuery and AJAX to request an answer from the API [The Movie DB](https://www.themoviedb.org/documentation/api)  
+The App uses jQuery and AJAX to request a JSON answer from the API [The Movie DB](https://www.themoviedb.org/documentation/api)  
 There is only one HTML page, and everything is managed by JavaScript.  
 
 ## Ways of improving the app
