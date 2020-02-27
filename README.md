@@ -11,3 +11,4 @@ There is only one HTML page, and everything is managed by JavaScript.
   * add TV shows and dramas not only movies
   * more different genres filters
   * etc...
+- Pagination
