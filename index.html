@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Contrail+One|Roboto|Sigmar+One" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main2.css">
+
+
+    <title></title>
+  </head>
+  <body>
+      <header>
+        <h1><a href="index.html">MyMoviz</a></h1>
+        <form action="#" method="post" id="search-form">
+          <input type="text" name="search" placeholder="Rechercher un film" id="search">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </header>
+    <div class="container">
+      <nav>
+        <h3>Genre</h3>
+        <a href="#" data-type="movie" data-genre-id="12" data-genre-name="Aventure">Aventure</a>
+        <!-- https://api.themoviedb.org/3/discover/movie?api_key=f3a7347fd19c436dc3e9858efb1769c5&language=fr&sort_by=popularity.desc&include_adult=false&page=1&with_genres=12 -->
+        <a href="#" data-type="movie" data-genre-id="28" data-genre-name="Action">Action</a>
+        <a href="#" data-type="movie" data-genre-id="53" data-genre-name="Thriller">Thriller</a>
+        <a href="#" data-type="movie" data-genre-id="35" data-genre-name="Comédie">Comédie</a>
+
+      </nav>
+      <main>
+        <!-- ici sera affiché les infos des différents films -->
+      </main>
+    </div>
+
+    <!-- Chargement de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Script d'interraction avec Movie DB -->
+    <script src="js/themoviedb.js"></script>
+    <!-- Script de gestion des évènements -->
+    <script src="js/events.js"></script>
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
