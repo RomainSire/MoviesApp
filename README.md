@@ -7,7 +7,7 @@ There is only one HTML page, and everything is managed by JavaScript.
 ## Ways of improving the app
 - Currently not responsive, has to be done.
 - Add other default movies searches, such as :
-⋅⋅ * filter by year
-⋅⋅ * add TV shows and dramas not only movies
-⋅⋅ * more different genres filters
-⋅⋅ * etc...
+  * filter by year
+  * add TV shows and dramas not only movies
+  * more different genres filters
+  * etc...
