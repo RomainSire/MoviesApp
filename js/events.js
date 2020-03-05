@@ -11,6 +11,9 @@ function onSearchMovie(event) {
   theMovieDbPath = 'https://api.themoviedb.org/3/search/movie?api_key=f3a7347fd19c436dc3e9858efb1769c5&language=fr&include_adult=false&page=1&query=' + userSearchModified;
   // titre de ce qui sera affiché :
   var title = 'Recherche : ' + userSearch;
+  console.log(theMovieDbPath);
+  console.log(title);
+
   // On envoie la requête et on affiche la liste grâce à la fonction qui va bien
   displayMovieList(theMovieDbPath, title);
 }

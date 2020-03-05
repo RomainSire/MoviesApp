@@ -25,12 +25,18 @@ function displayMovieList(theMovieDbPath, searchTitle) {
   // requete jQuery à la base de données the movie database. enregistré dans "request"
   $.getJSON(theMovieDbPath, function(request) {
     var trendingMovies = request.results; // request est un objet, avec la catégorie qui nous intéresse : "results". c'est un tableau qui contient les objets relatifs aux films
+    
     var section = $('<section class="movie-list">');  // on crée un élément section
     var title = $('<h2>' + searchTitle + '</h2>')
     section.append(title);
     $.each(trendingMovies, function(index, movie) {  // pour chaque élément du tableau contenant les objets movie :
-
-      var figure = $('<figure data-id="' + movie.id + '"><img src="' + posterPath(movie, 'w154') + '" alt="Affiche du film ' + movie.title + '"><figcaption>' + movie.title + ' - ' + movie.release_date.substring(0,4) + '</figcaption></figure>'); // création des éléments figure, img, et figcaption
+      console.log(movie.release_date);
+      if (movie.release_date === undefined) {
+        movie.release_date = "Date inconnue"
+      } else {
+        movie.release_date = movie.release_date.substring(0,4)
+      }
+      var figure = $('<figure data-id="' + movie.id + '"><img src="' + posterPath(movie, 'w154') + '" alt="Affiche du film ' + movie.title + '"><figcaption>' + movie.title + ' - ' + movie.release_date + '</figcaption></figure>'); // création des éléments figure, img, et figcaption
 
       section.append(figure); // et mettre la figure dans ma section
     });
